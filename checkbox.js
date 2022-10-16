@@ -23,5 +23,3 @@ function handleCheck(e) {
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('click', handleCheck);
 });
-
-console.log("Hello")
