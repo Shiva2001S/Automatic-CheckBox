@@ -5,6 +5,7 @@ let lastChecked;
 function handleCheck(e) {
 
     let inBteween = false;
+    // Only when we select the first checkbox and press Shift and then check another ceckbox then it will work
     if (e.shiftKey && this.checked) {
 
         checkboxes.forEach(checkbox => {
@@ -22,3 +23,5 @@ function handleCheck(e) {
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('click', handleCheck);
 });
+
+console.log("Hello")
